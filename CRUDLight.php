@@ -78,7 +78,6 @@ class CRUDLight extends DBSource {
 		$this->connect();
 		try {
 			$sql = "SHOW TABLES FROM " . $this->dbName;
-			echo "<br />" . $sql;
 			$result = $this->db->query($sql);
 			if ($this->isQueryGood($result)) {
 				while ($rows = $result->fetch(PDO::FETCH_NUM)) {
