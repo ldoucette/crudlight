@@ -7,8 +7,6 @@
  *   Create, Read, Update, Delete  
  */
 
-require_once "DBSource.php";
-
 class CRUDLight extends DBSource {
 	
 	private $host;
@@ -29,10 +27,10 @@ class CRUDLight extends DBSource {
 		parent::__construct();
 		$source = parent::getDbSource();
 		try {
-			$this->host 	= $this->isValueValid($source["dbHost"]);
-			$this->user 	= $this->isValueValid($source["user"]);
-			$this->password = $this->isValueValid($source["password"]);
-			$this->dbName 	= $this->isValueValid($source["dbName"]);
+			$this->host 	= "dbHost";  // change values here
+			$this->user 	= "user";
+			$this->password = "password";
+			$this->dbName 	= "dbName";
 		} catch (Exception $e) {
     		echo 'Caught exception: ',  $e->getMessage(), "\n";
 		}
