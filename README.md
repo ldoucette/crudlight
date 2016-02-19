@@ -38,8 +38,8 @@ require_once "CRUDLight.php";
 /*
   sample script for query
   $dbo->query("select * from person where id = :id", array(id=>33));
-	$dbo = null;	
-								 */
+	$dbo = null; */
+	
 ?>
 
 </body>
