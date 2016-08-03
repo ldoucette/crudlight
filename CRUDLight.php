@@ -7,7 +7,7 @@
  *   Create, Read, Update, Delete  
  */
 
-class CRUDLight extends DBSource {
+class CRUDLight {
 	
 	private $host;
 	private $dbName;
