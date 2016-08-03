@@ -24,8 +24,6 @@ class CRUDLight {
 	private $fields;
 					
 	public function __construct() {
-		parent::__construct();
-		$source = parent::getDbSource();
 		try {
 			$this->host 	= "dbHost";  // change values here
 			$this->user 	= "user";
